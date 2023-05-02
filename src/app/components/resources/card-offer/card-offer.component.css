@@ -1,0 +1,141 @@
+* {
+    transition: all 0.3s;
+}
+
+.container-card {
+    box-sizing: border-box;
+    background-color: #222831;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-yellow {
+    display: flex;
+    align-items: center;
+    padding: 8px 30px;
+    background-color: #ffbe33;
+    color: #ffffff;
+    border-radius: 45px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+    height: 3rem;
+}
+
+.image-card {
+    position: relative;
+    border: 5px solid #ffbe33;
+    border-radius: 50%;
+    background-size: 100%;
+    min-width: 175px;
+    width: 175px;
+    height: 175px;
+    transition: background-size 0.3s;
+    overflow: hidden;
+}
+
+.image-card img {
+    width: 100%;
+    transform: scale(1);
+    transition: transform .3s;
+}
+
+.image-card img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.btn-yellow:hover {
+    background-color: #E69C00;
+    transition: background-color 0.2s;
+}
+
+i {
+    margin-left: 8px;
+}
+
+.title-card,
+.discount {
+    margin-bottom: 5px;
+}
+
+.title-card {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5rem;
+}
+.discount {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.discount-text {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+
+
+/* Estilos para pantallas de más de 1200px */
+@media (min-width: 1201px) {
+    .container-card {
+        width: 550px;
+    }
+
+    .image-card {
+        margin-right: 20px;
+    }
+}
+
+/* Estilos para pantallas entre 991px y 1200px */
+@media (min-width: 991px) and (max-width: 1200px) {
+    .container-card {
+        width: 450px;
+    }
+
+    .image-card {
+        margin-right: 20px;
+    }
+}
+
+/* Estilos para pantallas entre 768px y 991px TABLET*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .container-card {
+        width: 350px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .image-card {
+        margin-bottom: 15px;
+    }
+
+
+}
+
+/* Celular */
+
+@media (min-width:100px) and (max-width:768px) {
+
+    .container-card {
+        width: calc(100%);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .image-card {
+        margin-bottom: 15px;
+    }
+}

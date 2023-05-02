@@ -1,0 +1,8 @@
+<mat-form-field class="prueba" appearance="fill">
+  <mat-label>{{nameSelect}}</mat-label>
+  <mat-select formControlName="personas">
+    <mat-option *ngFor="let opt of options" [value]="opt.value">
+      {{opt.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

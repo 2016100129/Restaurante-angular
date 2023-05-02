@@ -1,0 +1,111 @@
+p {
+    margin: 0 !important;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color .3s;
+}
+
+
+a:hover {
+    color: #ffbe33;
+    transition: all .3s;
+}
+
+.container-footer {
+    background-color: #222831;
+    width: 100%;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    padding: 75px 0 40px 0;
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    color: #dbdbdb;
+    margin-bottom: 1rem;
+}
+
+.container-marca,
+.container-horario,
+.container-contact {
+    width: calc(100%/3);
+}
+
+.contact-fila {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.contact-fila i {
+    margin-right: 10px;
+}
+
+.title-marca,
+.title-contact,
+.title-horario {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.horario-fila {
+    margin-bottom: 1rem;
+}
+
+.title-marca {
+    font-weight: bold;
+    font-size: 2.5rem !important;
+}
+
+.container-social-networks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.fas {
+    font-size: none;
+    font: 50px;
+}
+
+.content-ico {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222831;
+    margin: 0 5px;
+}
+
+.content-ico:hover {
+    color: #ffbe33;
+}
+
+.detail-marca {
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width:100px) and (max-width:768px) {
+    .responsive {
+        flex-direction: column;
+    }
+
+    .container-marca, .container-horario, .container-contact{
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 2rem;
+        transition: all 0.3s;
+    }
+
+}

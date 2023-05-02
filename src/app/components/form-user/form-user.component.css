@@ -1,0 +1,170 @@
+.none {
+    display: none;
+}
+
+.continer-main {
+    width: 100%;
+}
+
+.container-confirmed-password {
+    width: 49% !important;
+    margin-bottom: 20px;
+}
+
+.border-error {
+    border: solid #DC3545;
+    transition: all 0.3s;
+}
+
+.message-error {
+    width: 100% !important;
+    text-align: center;
+    color: #DC3545;
+}
+
+.container-form-user {
+    border: 1px solid #6f7781;
+    border-radius: 10px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 3.5rem auto 3rem auto;
+}
+
+.active {
+    background-color: #f7f7f7;
+    color: #ffbe33;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid #ffbe33;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.header {
+    display: flex;
+}
+
+.login,
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    width: 50%;
+    cursor: pointer;
+}
+
+.form-login,
+.form-register {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    padding: 25px;
+}
+
+form label {
+    display: flex;
+}
+
+.container-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input_register {
+    width: 49% !important;
+}
+
+a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container-input div {
+    width: calc(50% - (15px)/2);
+}
+
+.in,
+.container-input input {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: 3.5rem;
+    margin-bottom: 10px;
+
+}
+
+
+
+.container-login a {
+    margin-bottom: 2rem;
+}
+
+.R input {
+    margin-left: 15px;
+}
+
+label {
+    margin: 10px 0;
+}
+
+label input {
+    margin-right: 10px;
+}
+
+.btn-yellow {
+    margin: 20px auto 0 auto;
+}
+
+/* Estilos para pantallas de más de 1200px */
+@media (min-width: 1201px) {
+    .responsive {
+        width: 1200px;
+    }
+}
+
+/* Estilos para pantallas entre 991px y 1200px */
+@media (min-width: 991px) and (max-width: 1200px) {
+    .responsive {
+        width: 992px;
+    }
+}
+
+/* Estilos para pantallas entre 768px y 991px TABLET*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .responsive {
+        width: 800px;
+    }
+
+    .enlace {
+        margin-left: 20px;
+    }
+
+
+    .space {
+        margin-right: 1rem;
+    }
+
+
+}
+
+/* Celular */
+
+@media (min-width:100px) and (max-width:768px) {
+    .container-form-user {
+        width: 350px;
+    }
+
+    .container-input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input_register {
+        width: 100% !important;
+    }
+}

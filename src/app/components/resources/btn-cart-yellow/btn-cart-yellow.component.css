@@ -1,0 +1,21 @@
+.btn-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #ffbe33;
+    transition: background-color 0.2s;
+}
+
+.btn-cart img {
+    width: 55%;
+    margin: 0 !important;
+}
+
+.btn-cart:hover {
+    background-color: #E69C00;
+    transform: scale(1.1);
+    transition: all 0.2s;
+}

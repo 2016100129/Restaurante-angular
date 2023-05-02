@@ -1,0 +1,57 @@
+<nav>
+    <div class="responsive">
+        <input type="checkbox" id="check">
+        <a href="/" class="enlace">Feane</a>
+        <ul class="navbar">
+            <li class="">
+                <a class="nav-link space" routerLink="/home" routerLinkActive="nav-active">HOME</a>
+            </li>
+            <li class="">
+                <a class="nav-link space" routerLink="/menu" routerLinkActive="nav-active">MENÚ</a>
+            </li>
+            <li class="">
+                <a class="nav-link space" routerLink="/about" routerLinkActive="nav-active">ACERCA DE</a>
+            </li>
+            <li class="">
+                <a class="nav-link" routerLink="/reservation" routerLinkActive="nav-active">RESERVA</a>
+            </li>
+        </ul>
+        <div class="container-options">
+            <a class="fa-solid fa-user opt-ico" routerLink="/user"></a>
+            <i class="fa-solid fa-magnifying-glass opt-ico"></i>
+            <i class="fa-solid fa-cart-shopping opt-ico"></i>
+            <btn-yellow txtBtn="Orden en línea"></btn-yellow>
+        </div>
+        <!-- <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label> -->
+        <a href=""class="btnLogin" routerLink="/user">
+            <i class="fa fa-user-circle user-ico"></i>
+        </a>
+    </div>
+
+    <div class="nav-inf">
+        <div class="container-options-movil">
+            <a class="opt nav-link" routerLink="/home" routerLinkActive="nav-active">
+                <i class="fa-solid fa-house opt-ico"></i>
+                <div class="name-opt">Home</div>
+            </a>
+            <a class="opt nav-link" routerLink="/menu" routerLinkActive="nav-active">
+                <i class="fa-solid fa-burger opt-ico"></i>
+                <div class="name-opt">Menú</div>
+            </a>
+            <a class="opt nav-link" routerLink="/about" routerLinkActive="nav-active">
+                <i class="fa-solid fa-building opt-ico"></i>
+                <div class="name-opt">Acerca de</div>
+            </a>
+            <a class="opt nav-link" routerLink="/cart" routerLinkActive="nav-active">
+                <i class="fa-solid fa-cart-shopping opt-ico"></i>
+                <div class="name-opt">Cart</div>
+            </a>
+            <a class="opt nav-link" routerLink="/reservation" routerLinkActive="nav-active">
+                <i class="fa-solid fa-utensils opt-ico"></i>
+                <div class="name-opt">Reservación</div>
+            </a>
+        </div>
+    </div>
+</nav>

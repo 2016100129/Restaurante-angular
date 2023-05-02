@@ -1,0 +1,19 @@
+.btn-yellow {
+    display: inline-block;
+    padding: 8px 30px;
+    background-color: #ffbe33;
+    color: #ffffff;
+    border-radius: 45px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+    height: 3rem;
+}
+
+.btn-yellow:hover {
+    background-color: #E69C00;
+    transition: background-color 0.2s;
+}

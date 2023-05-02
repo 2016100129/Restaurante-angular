@@ -1,0 +1,63 @@
+<div class="container-main">
+    <div class="container-form-user">
+        <div class="header">
+            <div class="login" [class.active]="optionLogin" (click)="loginEvent()">Inciar sesión</div>
+            <div class="register" [class.active]="optionRegister" (click)="registerEvent()">Registrarme</div>
+        </div>
+        <div class="body">
+            <div class="container-login" [class.none]="valueLogin">
+                <form action="" class="form-login">
+                    <input class="in" type="email" placeholder="Correo electrónico">
+                    <input class="in" type="password" placeholder="Contraseña">
+                    <label for="recordar-cuenta">
+                        <input type="checkbox" id="recordar-cuenta">
+                        <div>Recordar mi cuenta</div>
+                    </label>
+                    <btn-yellow txtBtn="Iniciar sesión"></btn-yellow>
+                </form>
+                <a href="">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="container-register" [class.none]="valueRegister">
+                <form action="" class="form-register" [formGroup]="registerForm" (ngSubmit)="validateForm()">
+                    <div class="container-input">
+
+                        <input class="input_register" type="text" placeholder="Nombres" formControlName="name_client">
+                        <input class="input_register" type="text" placeholder="Apellidos"
+                            formControlName="lastname_client">
+                        <input class="input_register" type="date" placeholder="Fecha de nacimiento"
+                            formControlName="birthdate_client">
+                        <input class="input_register" type="number" placeholder="DNI/ CE"
+                            formControlName="document_client">
+                        <input [class.border-error]="borderEmail" class="input_register" type="email" placeholder="Correo electrónico"
+                            formControlName="email_client" (blur)="validateEmail()">
+                        <input class="input_register" type="number" placeholder="Celular"
+                            formControlName="phone_client">
+                        <div [class.none]="mEmail" style="width: 100%;" class="message-error">{{mensajeEmail}}</div>
+                        <input class="input_register" type="text" placeholder="Contraseña"
+                            formControlName="password_client" (blur)="validatePassword()">
+                        <div class="container-confirmed-password">
+                            <input [class.border-error]="error" (blur)="validatePassword()" type="text"
+                                placeholder="Repita su Contraseña" formControlName="confirmed_password_client">
+                            <div [class.none]="display" class="message-error">{{mensaje}}</div>
+                        </div>
+                    </div>
+                    <label for="auth">
+                        <input type="checkbox" id="auth" formControlName="data_client">
+                        <div>Autorizo el tratamiento de mis datos para fines de prospección y promoción comercial por
+                            parte
+                            de Feane y sus Empresas Vinculadas</div>
+                    </label>
+                    <label for="leido">
+                        <input type="checkbox" id="leido" formControlName="privacy_policies_client">
+                        <div>He leído y acepto la Política de Privacidad.</div>
+                    </label>
+                    <button class="btn-yellow" [disabled]="validForm">Registrarme</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-message" [class.none]="valueMessage">
+    <message-system textoMessage={{mensajeSystem}}></message-system>
+</div>

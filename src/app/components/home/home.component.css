@@ -1,0 +1,183 @@
+.container-home {
+    background-image: url("../../../assets/global/background-1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 5.5rem);
+}
+
+.container-carousel {
+    height: 100%;
+}
+
+.container-home li {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+    list-style: none;
+}
+
+.carousel-indicators {
+    height: 20px;
+    justify-content: left;
+    margin-left: 0;
+    padding: 0 7rem;
+    align-items: center;
+}
+
+.carousel-indicators li {
+    margin-right: 6px;
+}
+
+.carousel-indicators .active {
+    width: 20px;
+    height: 20px;
+    background-color: #ffbe33 !important;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.container-item {
+    padding-top: 5rem;
+    width: 55%;
+    margin-bottom: 4rem;
+    padding: 10rem 0 90px 0;
+}
+
+.title-item,
+.detail-item {
+    color: #ffffff;
+}
+
+.title-item {
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.detail-item {
+    width: 75%;
+    font-size: 14px;
+    padding-bottom: 1.5rem;
+}
+
+/* Estilos para pantallas de más de 1200px */
+@media (min-width: 1201px) {
+    .container-carousel {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-item {
+        width: 70%;
+        padding: 6rem 20px 90px 20px;
+    }
+}
+
+/* Estilos para pantallas entre 991px y 1200px */
+@media (min-width: 991px) and (max-width: 1200px) {
+    .container-carousel {
+        width: 991px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-item {
+        width: 90%;
+        padding: 6rem 20px 90px 20px;
+    }
+}
+
+/* Estilos para pantallas entre 768px y 991px TABLET*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .container-carousel {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-item {
+        width: 90%;
+        padding: 6rem 20px 90px 20px;
+    }
+
+}
+
+/* Celular */
+
+@media (min-width:600px) and (max-width:768px) {
+    .container-carousel {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-home {
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+
+
+    .carousel-indicators {
+        padding: 0;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .title-item,
+    .detail-item {
+        width: 100%;
+    }
+
+    .container-item {
+        width: 55%;
+        margin-bottom: 4rem;
+        padding: 3rem 0 0px 0;
+    }
+
+    .about {
+        padding-bottom: 3.5rem;
+        background-color: #222831;
+    }
+}
+
+@media (min-width:0px) and (max-width:600px) {
+    .container-home {
+        width: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .container-carousel {
+        width: 95%;
+        flex-direction: column-reverse;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-item {
+        width: 85%;
+        padding: 3rem 10px 0px 10px;
+    }
+
+    .carousel-indicators {
+        padding: 0;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .title-item,
+    .detail-item {
+        width: 100%;
+    }
+
+    .about {
+        padding-bottom: 3.5rem;
+        background-color: #222831;
+    }
+}

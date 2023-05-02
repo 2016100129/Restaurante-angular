@@ -1,0 +1,30 @@
+<div class="container-reservation">
+    <div class="container-form">
+        <div class="title title-form">Libro de mesa</div>
+        <form [formGroup]="reserveForm" class="form" action="" (ngSubmit)="saveForm()">
+            <input class="input" type="text" placeholder="Tu nombre" formControlName="name_client">
+            <input class="input" type="number" placeholder="Número de teléfono" formControlName="phone_number">
+            <input class="input" type="email" placeholder="Tu correo electrónico" formControlName="email_client">
+            
+            <mat-form-field class="prueba" appearance="fill">
+                <mat-label>Cuántas personas?</mat-label>
+                <mat-select formControlName="persons_number">
+                  <mat-option *ngFor="let opt of options" [value]="opt.value">
+                    {{opt.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+
+            <input class="input" type="date" name="" id="" formControlName="date_reserve">
+            <btn-yellow class="btn-form" txtBtn="RESERVE AHORA"></btn-yellow>
+            <button type="submit" [disabled]="reserveForm.invalid">prueba</button>
+        </form>
+    </div>
+    <div class="container-maps">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9690.80546786629!2d-77.04428496490722!3d-12.061632332420993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima!5e0!3m2!1ses!2spe!4v1681594265981!5m2!1ses!2spe"
+            width="100%" height="87%" style="padding-top: 5rem" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>

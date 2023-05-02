@@ -1,0 +1,13 @@
+<div class="background" [class.none]="value">
+    <div class="container-message">
+        <div class="container-close">
+            <button class="close" (click)="close()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="message">{{textoMessage}}</div>
+        <a href="/user">
+            <button class="btn-yellow">Ir al login</button>
+        </a>
+    </div>
+</div>

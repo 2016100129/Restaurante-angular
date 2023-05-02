@@ -1,0 +1,52 @@
+.container-card {
+    text-align: left;
+    width: 100%;
+    background-color: #222831;
+    border-radius: 15px;
+}
+.container-image, .container-detail {
+    width: 100%;
+}
+
+.container-detail {
+    color: #FFFFFF;
+    padding: 25px;
+}
+
+.container-image {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F2F3;
+    border-radius: 15px 15px 0 45px;
+    height: 13rem;
+}
+
+.container-flex {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+img {
+    max-height: 145px;
+    transition: all 0.2s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.title-item{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.item-detail {
+    font-size: 15px;
+}
+
+.item-price {
+    margin-right: auto;
+}

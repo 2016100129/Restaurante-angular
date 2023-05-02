@@ -1,0 +1,17 @@
+<div class="container-menu">
+    <div class="title">Nuestro menú</div>
+    <div class="container-btns">
+        <!-- <button [class.active]="true" class="btn-dark" (click)="filterItem(0)">Todos</button> -->
+        <!-- <button *ngFor="let categoria of categoriasArray" class="btn-dark"
+            (click)="filterItem(categoria.name)">{{categoria.nombre_categoria}}</button> -->
+        <button *ngFor="let categoria of categoriasArray; let i=index" class="btn-dark"
+            [class.active]="activeButton === i" (click)="filterItem(categoria.name); activeButton = i">
+            {{categoria.nombre_categoria}}
+        </button>
+    </div>
+
+    <div class="container-items">
+        <card *ngFor="let producto of productos" [producto]="producto"></card>
+    </div>
+    <btn-yellow txtBtn="Ver más"></btn-yellow>
+</div>
