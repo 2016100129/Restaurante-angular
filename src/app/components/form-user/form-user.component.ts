@@ -40,8 +40,8 @@ export class FormUserComponent {
       phone_client: ['', Validators.required],
       password_client: ['', Validators.required],
       confirmed_password_client: ['', Validators.required],
-      data_client: ['', Validators.required],
-      privacy_policies_client: ['', Validators.required]
+      data_client: [false, Validators.required],
+      privacy_policies_client: [false, Validators.required]
     })
 
 
